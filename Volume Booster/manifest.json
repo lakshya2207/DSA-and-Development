@@ -1,0 +1,27 @@
+{
+    "name": "Volume Booster",
+    "version": "0.0.1",
+    "manifest_version": 3,
+
+    "description": "This extension helps you to increase the Volume by adding gain to your audio streams.",
+    "action": {
+        "default_title": "Volume Booster",
+        "default_popup": "popup.html"
+    },
+    "permissions":[
+        "activeTab",
+        "declarativeContent",
+        "storage",
+        "scripting",
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+          "matches": ["https://*/*"],
+          "js": ["content-script.js"]
+        }
+      ],
+      "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" }
+}
