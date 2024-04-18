@@ -1,3 +1,4 @@
+import utilities.*;
 import java.util.Scanner;
 
 class Algebra{
@@ -33,6 +34,9 @@ public class Main {
         int b =sc.nextInt();
         int sum =obj.add(a, b);
         System.out.println("Sum : "+ sum);
+        app obj2 = new app();
+        // int diff =app.sub(a,b);
+        System.out.println("Sum : "+ sum);
 
 
         //standard: print,sqrt,floor,ceil
@@ -40,6 +44,9 @@ public class Main {
         System.out.println(Math.ceil(5.5));
         System.out.println(Math.sqrt(5));
         sc.close();
+
+
+
     }
     static void Greet(){ //static is non access modifier
         System.out.println("Hello Everyone");
