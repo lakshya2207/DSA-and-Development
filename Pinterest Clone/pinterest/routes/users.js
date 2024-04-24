@@ -2,10 +2,11 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const plm = require("passport-local-mongoose");
-
+require('dotenv').config()
+const dbUrl = process.env.connection_string;
 // mongoose.connect("mongodb://localhost:27017/pin");
 
-mongoose.connect("mongodb://localhost:27017/pinterest")
+// mongoose.connect("")
 
 const userSchema = new Schema({
   username: { type: String, required: true, unique: true },
